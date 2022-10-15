@@ -1,0 +1,80 @@
+
+.short{
+    border-radius: 10px;
+    height: 150px;
+    background-color: rgb(6, 252, 252);
+    color: rgb(19, 18, 18);
+}
+.short2{
+    
+    height: 150px;
+    background-color: rgb(38, 39, 39);
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.shortalign{
+    padding-top: 40px;
+    
+}
+.exceptional{
+    margin-top: 120px;
+}
+.exceptionalimg{
+    height:600px;
+}
+.exceptionalinfo{
+    margin-top: 110px;
+    text-align: start;
+}
+.exceph1{
+    font-size: 70px;
+}
+.appointment{
+    
+    margin-top: 240px;
+    padding-bottom: 420px;
+    background-image: url('/src/assets/images/appointment.png');
+    height: 650px;
+    
+}
+.appointmentinfo{
+    color: bisque;
+    margin-top: 220px;
+    text-align: start;
+}
+.appointment h6{
+    color: aqua;
+    font-size: 20px;
+}
+.appointment h1{
+    color: aquamarine;
+}
+.doctorimg{
+    
+    margin-bottom: 220px;
+}
+
+.service{
+    padding-top: 40px;
+}
+.choosepart{
+    margin-top: 110px;
+    margin-left: 90px;
+}
+.icon{
+    font-size: 50px;
+    padding: 5px 20px;
+    color: rgb(176, 128, 204);
+}
+
+
+@media screen and (max-width:768px) {
+
+    
+    .short{
+        margin: 10px 10px;
+    }
+    .short2{
+        margin: 10px 10px;
+    }
+}

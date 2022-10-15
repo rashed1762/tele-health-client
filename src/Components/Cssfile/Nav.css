@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.navstyle{
+    text-decoration: none;
+    padding: 7px;
+    font-family: 'Courgette', cursive;
+    color: black;
+   
+}
+.navstyle:hover{
+    border-bottom: 5px solid green;
+    transition: .3s;
+    word-spacing: 9px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.logoname{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    color: rgb(160, 74, 12);
+}

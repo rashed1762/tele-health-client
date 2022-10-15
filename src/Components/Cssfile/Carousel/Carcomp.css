@@ -1,0 +1,37 @@
+.car1info{
+    color: black;
+    margin-right: 550px;
+    text-align: start;
+    margin-bottom: 150px;
+    
+}
+.car{
+    height: 480px;
+}
+.carh1{
+    font-size: 50px;
+}
+.car3h1{
+    color: brown;
+    margin-left: 820px;
+    margin-top: 40px;
+}
+.car2info{
+    margin-bottom: 350px;
+    letter-spacing: 5px;
+    border-bottom: 5px solid rgb(55, 193, 218);
+    color: rgb(197, 104, 209);
+}
+@media screen and (max-width:768px) {
+
+   .car1info{
+        margin-left: 20px;
+        margin-top: 220px;
+        font-size: 10px;
+        width: 320px;
+   } 
+   .carh1{
+    font-size: 20px;
+}
+   
+}
