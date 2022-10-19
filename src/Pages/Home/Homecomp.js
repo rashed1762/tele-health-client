@@ -222,7 +222,7 @@ const Homecomp = () => {
 
                   <hr />
 
-                <section className='container-fluid container'>
+                <section className='container-fluid'>
                   <Footer></Footer>
                 </section>
 

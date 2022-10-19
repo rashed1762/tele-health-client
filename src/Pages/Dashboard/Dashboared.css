@@ -1,0 +1,9 @@
+.dashnav{
+    background-color: white;
+    padding: 10px 30px;
+    border-right: 5px solid red;
+}
+.dashcolour{
+    color: rgb(241, 6, 229);
+    font-weight: bolder;
+}

@@ -19,7 +19,7 @@ const Carcomp = () => {
         />
         <Carousel.Caption >
             <div className='car1info'>
-            <h1 className='carh1'>Your new smile start hare</h1>
+            <h1 className='carh1'>Your new smile start here</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           <Button variant="primary">Get Started</Button>{' '}
           
@@ -47,9 +47,7 @@ const Carcomp = () => {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h1 className='car3h1'>24/7 SERVICE</h1>
-        </Carousel.Caption>
+        
       </Carousel.Item>
     </Carousel>
     </div>

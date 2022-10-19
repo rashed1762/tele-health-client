@@ -1,0 +1,21 @@
+.chair{
+    height: 400px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.calender{
+    background-color: aqua;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(234, 243, 220);
+    margin-left: 30px;
+}
+.format{
+    background-color: rgb(173, 89, 252);
+    border-radius: 10px 0px;
+    color: rgb(233, 236, 10);
+    font-weight: bold;
+}
+.availavle{
+    margin-top: 120px;
+}

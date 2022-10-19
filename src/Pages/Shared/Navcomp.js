@@ -4,9 +4,18 @@ import img1 from '../../assets/icons/logo2.png'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import { NavLink,Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import Button from 'react-bootstrap/Button';
+import { signOut } from 'firebase/auth';
 const Navcomp = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+    localStorage.removeItem('accessToken');
+};
   return (
     <div>
              <Navbar bg="light" expand="lg">
@@ -22,10 +31,17 @@ const Navcomp = () => {
            <NavLink className="navstyle" to="/appoinment" as={Link}> Appointment</NavLink> 
            <NavLink className="navstyle" to="/review" as={Link}> Review</NavLink> 
            <NavLink className="navstyle" to="/contact" as={Link}> Contact</NavLink> 
+           {
+            user && <NavLink className="navstyle" to="/dashboard" as={Link}> Dashboard</NavLink> 
+           }
            </Nav>
 
            <Nav className='ms-auto'>
-           <NavLink className="navstyle" to="/login" as={Link}> Login</NavLink> 
+            {
+              user?  <button className="btn btn-primary" onClick={logout} >Sign Out</button> :
+                 <NavLink className="navstyle" to="/login" as={Link}> Login</NavLink> 
+            }
+          
            </Nav>
            
           
