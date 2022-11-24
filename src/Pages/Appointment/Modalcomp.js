@@ -10,25 +10,23 @@ import {  toast } from 'react-toastify';
 const Modalcomp = (props) => {
   const [user, loading] = useAuthState(auth);
   const {_id,name,slots}=props.value;
-  const date=props.footer;
+  const {formateDate}=props.footer;
   const handleBooking=event=>{
     event.preventDefault();
     const slot=event.target.slot.value;
-    console.log(slot);
     props.setModalShow(null);
-   
 
     const booking={
       valueId:_id,
-      value:name,
-      Date:date,
+      name:name,
+      date:formateDate,
+      slot,
       patient:user.email,
       patientName:user.displayName,
       phone:event.target.phone.value,
-      
+
     }
    
-    
     fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {

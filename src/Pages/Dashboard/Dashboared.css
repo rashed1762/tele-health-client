@@ -6,4 +6,28 @@
 .dashcolour{
     color: rgb(241, 6, 229);
     font-weight: bolder;
+   
+}
+.userlength{
+    color: aqua;
+    margin-left: 270px;
+
+}
+.userstyle{
+    margin-left: 440px;
+    margin-top: 40px;
+    border: 1px solid rgb(253, 251, 251);
+    box-shadow: 10px 10px 20px rgb(247, 229, 229);
+    border-radius: 20px;
+}
+.admin{
+   font-weight: bolder;
+}
+.remove{
+    margin-top: 25px;
+}
+.email{
+    margin-top: 30px;
+    height: 50%;
+  
 }

@@ -15,7 +15,7 @@ const Availableapointment = ({footer}) => {
     const modalHandle=(data)=>{
       setModalShow(true);
       setModalData(data);
-      console.log(data);
+      
     }
 
     useEffect(()=>{
@@ -25,7 +25,7 @@ const Availableapointment = ({footer}) => {
     },[])
 
     
-    console.log(services);
+   
   return (
     <div>
       

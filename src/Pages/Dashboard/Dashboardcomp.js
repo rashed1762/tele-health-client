@@ -7,7 +7,9 @@ import Tab from 'react-bootstrap/Tab';
 import Button from 'react-bootstrap/Button';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
+
 const Dashboardcomp = () => {
+
   return (
     <div className='container-fluid'>
          <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -20,7 +22,8 @@ const Dashboardcomp = () => {
            
             </Nav.Item>
             <Nav.Item>
-            <NavLink className="dashnav" to="/dashboard/users" as={Link}> <Button className='w-100' variant="success">All Users</Button>{' '}</NavLink> 
+             <NavLink className="dashnav" to="/dashboard/users" as={Link}> <Button className='w-100' variant="success">All Users</Button>{' '}</NavLink> 
+             <NavLink className="dashnav" to="/dashboard/review" as={Link}> <Button className='w-100' variant="success">all doctors</Button>{' '}</NavLink> 
         
             </Nav.Item>
           </Nav>
